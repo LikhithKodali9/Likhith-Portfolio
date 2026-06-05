@@ -1,0 +1,53 @@
+						Name: Venkata Likhith Kodali
+						GNumber: G01406932
+						SWE 642 Assignment-1
+
+	•	One well-known object storage solution offered by Amazon Web Services (AWS) is Amazon Simple Storage solution (Amazon S3). 
+    It provides developers, businesses, and individuals with scalable and dependable storage infrastructure so they may store and retrieve an infinite amount of data via the internet. 
+    Scalability, dependability, durability, security, object metadata, lifecycle management, and tagging are just a few of Amazon S3's salient characteristics.
+
+	•	Amazon Elastic Compute Cloud (EC2) is another web service of AWS that allows users to rent virtual computers, known as 'Instances', to run their own applications.
+
+The procedures listed in this documentation are to:
+
+	1.	Using HTML5, CSS, and the Bootstrap CSS framework, create a webpage and collect data about the Computer Science (CS) department, including a survey form. 
+    Configure and use AWS S3 and EC2 to host the website.
+
+Part-1: Deploying a Website on AWS S3
+
+	Step1: Create a Student Class Web Page
+               	To develop the Student Class webpage, I used various templates that were available.
+
+	Step2: Log in to AWS
+                      Open the AWS Management Console and log in. Choose S3 from the services
+                      dropdown menu. Make sure the region is set to your current location before
+                      selecting the option to create a new bucket. Next, send the subsequent files to
+                      the S3 bucket:
+	⁃	index.html
+	⁃	csdept.html
+	⁃	survey.html
+	⁃	Likhith_Kodali.jpeg
+
+	Step3: Access the Webpage
+		   Go to the S3 bucket's Properties tab after uploading the files. Make a copy of the endpoint URL, which leads to your website. Here's the URL (URL 1) to my website.
+           ( http://likhithportfolio.s3-website-us-east-1.amazonaws.com/?email=likhithkodali%40gmail.com# ).
+
+
+Part2: Deploying a Website on AWS EC2
+
+	Step1: Log in to AWS and Launch an EC2 Instance
+		   Open the AWS Management Console and log in. Make sure to pick Launch Instance from the services menu. Launch a fresh EC2 instance after making sure the region is set to your present location. 
+           For a web server, select an appropriate Amazon Machine Image (AMI), such as Ubuntu or Amazon Linux 2, and set up the networking, storage, and instance type.
+
+	Step2: Connect to your EC2 Instance
+		    After launching the instance, use SSH to connect to it.
+
+	Step3: Deploy your Website
+		    Transfer your website files to the EC2 instance using SCP or SFTP.
+	
+	Step4: Access your Application
+		    To visit your deployed website, use the public DNS or IP address of the EC2 instance. Below is the URLs (URL 2&3) to my website.
+	⁃	http://ec2-18-220-46-48.us-east-2.compute.amazonaws.com/home 
+	⁃	http://ec2-18-220-46-48.us-east-2.compute.amazonaws.com/survey 
+
+
